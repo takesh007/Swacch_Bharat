@@ -10,12 +10,10 @@
  */
 
 package swacchbharat;
-import java.awt.HeadlessException;
 import java.sql.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import javax.swing.JPasswordField;
 
 /**
  *
@@ -138,7 +136,7 @@ public class Login extends javax.swing.JFrame {
           txtuser.setText("");
           txtpass.setText("");
       }
-  }     catch (SQLException ex) {
+} catch (SQLException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
